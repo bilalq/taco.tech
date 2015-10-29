@@ -1,6 +1,9 @@
-<<<<<<< HEAD
 .header_taco {
   width: 30%;
+}
+
+.jumbotron {
+  text-align: center;
 }
 
 .logo {
@@ -8,7 +11,6 @@
   padding: 0;
   background-color: #2b3e50;
 }
-=======
 
 .userphoto img{
   height: 100px;
@@ -33,4 +35,3 @@
 .review-text h4{
   margin-top:0px;
 }
->>>>>>> 8701510cd1225951e136b6326da6ad4a65ffd71e
