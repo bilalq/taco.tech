@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .header_taco {
   width: 30%;
 }
@@ -7,3 +8,29 @@
   padding: 0;
   background-color: #2b3e50;
 }
+=======
+
+.userphoto img{
+  height: 100px;
+  width: 80px;
+}
+
+.userphoto {
+  float: left;
+}
+
+.review-text{
+  float:right;
+  height: 100px;
+  width: 75%;
+  margin-left: 20px;
+}
+
+.review{
+  height: 130px;
+}
+
+.review-text h4{
+  margin-top:0px;
+}
+>>>>>>> 8701510cd1225951e136b6326da6ad4a65ffd71e
