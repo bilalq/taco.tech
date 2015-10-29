@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<meta name="description" content="">
+<meta name="author" content="">
+<!-- <link rel="icon" href="../../favicon.ico"> -->
+
+<title>Narrow Jumbotron Template for Bootstrap</title>
+
+<!-- Bootstrap core CSS -->
+<link href="/css/bootstrap.css" rel="stylesheet">
+<link href="/css/override.css" rel="stylesheet">
+<script src="/node_modules/card/lib/js/jquery.card.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="nonymous"></script>
+
+<!-- Custom styles for this template -->
+<!-- <link href="jumbotron-narrow.css" rel="stylesheet"> -->
+</head>
+
+<body>
+
+<div class="container">
+  <div class="header clearfix">
+    <nav>
+      <ul class="nav nav-pills pull-right">
+        <li role="presentation" class=><a href="/">Home</a></li>
+        <li role="presentation" class="active"><a href="/order">Order</a></li>
+        <li role="presentation"><a href="#">About</a></li>
+        <li role="presentation"><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <h3 class="text-muted">taco.tech</h3>
+
+    <div class="card-wrapper">
+    </div>
+
+    <form style="padding-left: 400px; padding-top: 50px;" class="form-horizontal">
+      <div class="form-group">
+        <label for="number" class="col-sm-2 control-label">Number</label>
+        <div class="colo-sm-10">
+          <input type="text" name="number">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="name" class="col-sm-2 control-label">Name</label>
+        <div class="colo-sm-10">
+          <input type="text" name="name">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="expiry" class="col-sm-2 control-label">Expiry</label>
+        <div class="colo-sm-10">
+          <input type="text" name="expiry">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="cvc" class="col-sm-2 control-label">CVC</label>
+        <div class="colo-sm-10">
+          <input type="text" name="cvc">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-7 control-label">
+          <button class="btn btn-primary order" type="submit">Order Now!</button>
+        </div>
+      </div>
+    </form>
+
+    <div style="padding-top: 100px; font: 24px Helvetica, Arial, sans-serif; text-align: center;" class="bs-callout bs-callout-info success">Congrats! You're Black&Decker Rehydrator and tacos are on their way!</div>
+
+  </div> <!-- /container -->
+</div>
+
+
+
+<script>
+$('.success').fadeOut();
+var card = new Card({
+form: 'form',
+container: '.card-wrapper',
+
+placeholders: {
+number: '4117 3143 4234 2423' ,
+name: 'Marty McFly',
+expiry: '10/2015',
+             cvc: '323'
+             }
+             });
+
+$('.order').on('click', function(e) {
+  e.preventDefault();
+  $('form, .card-wrapper').fadeOut(function() {
+      $('.success').fadeIn();
+  })
+  return false;
+})
+</script>
+
+</body>
+</html>
+
